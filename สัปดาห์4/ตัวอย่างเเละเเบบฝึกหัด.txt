@@ -1,0 +1,10 @@
+ExampleV1. = AT89C51
+NOT ( NOT (iA Or DATA iB) Or DATA (NOT iC))
+oY = ! ( !(iA|iB) | (!iC) )
+
+
+
+Test1. = AT89C51
+NOT ( NOT (iA Or DATA iB) Or DATA (NOT iC) 
+Or DATA (NOT iB&iC) Or DATA (iA& NOT iC))
+oY = (!(!(iA|iB))|(!iC))|(!iB&iC)|(iA&!iC)
